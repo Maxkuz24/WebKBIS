@@ -1,0 +1,276 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+body {
+  background: linear-gradient(to top left, #ffffff, #bcbcbc, #a1a0a0);
+  height: 100%;
+  overflow: hidden scroll;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+input {
+  padding: 10px 12px;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #d0bcbc;
+  line-height: 1.5rem;
+  color: #444444;
+  font-size: 1rem;
+}
+/*
+  Шапка
+  */
+header {
+  background: linear-gradient(to top left, #09098f, #041437, #000031);
+  height: 100px;
+  border-bottom: 2px solid #ffffff;
+}
+header * {
+  color: #ffffff;
+}
+header .row .col-4 {
+  margin-bottom: 20px;
+}
+header h1 {
+  float: left;
+  margin-bottom: 15px;
+}
+header h1 a:hover {
+  color: #ffff;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+header ul li {
+  float: left;
+  position: relative;
+}
+header ul li a {
+  display: block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffff;
+  padding: 33px;
+}
+header ul li a:hover {
+  background: #00257f;
+  transition: 0.5s;
+  color: #ffff;
+}
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+}
+.row h1 {
+  padding-top: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.col-4 {
+  display: flex;
+  align-items: center;
+}
+
+.col-4 img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/*
+  Подвал
+  */
+.footer {
+  background-color: #000c55;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 330px;
+  border-top: 2px solid #ffffff;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 6%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-column-con h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-column-con li {
+  margin-bottom: 17px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-column-page li {
+  font-size: 28px;
+  margin-bottom: 3px;
+}
+
+.footer-column-page ul {
+  list-style: none;
+  float: left;
+}
+
+.footer-column-page a {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.footer-column-page a:hover {
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.footer-bottom {
+  background: #000a44;
+  color: #ffffff;
+  height: 35px;
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .footer-logo p {
+    font-size: 18px;
+  }
+
+  .footer-columns {
+    grid-gap: 50px;
+  }
+  .footer-column-con li {
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+  .footer-column-page a {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+  .footer-logo img {
+    width: 20%;
+  }
+  .footer {
+    height: 375px;
+  }
+}
+/* 
+  Страница "О нас"
+  */
+
+.about {
+  width: 83%;
+  height: auto;
+  margin: auto;
+  padding: 25px;
+  padding-bottom: 30px;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  background: white;
+}
+.about h2 {
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.choice {
+  width: 1255px;
+  height: auto;
+  margin: auto;
+  padding: 25px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+  background: white;
+}
+.choice h2 {
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.containerz {
+  height: auto;
+  margin: auto;
+
+  width: 1255px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 50%;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.card-image {
+  padding-top: 10px;
+  width: 50%;
+}
+
+.card-text {
+  text-align: center;
+  padding: 10px;
+}
+.card-text h3 {
+  color: black;
+}
+.card-text a {
+  color: black;
+}

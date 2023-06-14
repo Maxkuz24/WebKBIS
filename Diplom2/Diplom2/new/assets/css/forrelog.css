@@ -1,0 +1,260 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+body {
+  height: 100%;
+  overflow: hidden scroll;
+  background: linear-gradient(to top left, #ffffff, #bcbcbc, #4f4f4f);
+}
+
+a {
+  text-decoration: none;
+}
+input {
+  padding: 10px 12px;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #d0bcbc;
+  line-height: 1.5rem;
+  color: #444444;
+  font-size: 1rem;
+}
+
+/*
+Шапка
+*/
+header {
+  background: linear-gradient(to top left, #09098f, #041437, #000031);
+  height: 100px;
+  border-bottom: 2px solid #ffffff;
+}
+header * {
+  color: #ffffff;
+}
+header .row .col-4 {
+  margin-bottom: 20px;
+}
+header h1 {
+  float: left;
+  margin-bottom: 15px;
+}
+header h1 a:hover {
+  color: #ffff;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+header ul li {
+  float: left;
+  position: relative;
+}
+header ul li a {
+  display: block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffff;
+  padding: 33px;
+}
+header ul li a:hover {
+  background: #00257f;
+  transition: 0.5s;
+  color: #ffff;
+}
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+}
+.row h1 {
+  padding-top: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.col-4 {
+  display: flex;
+  align-items: center;
+}
+
+.col-4 img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/*
+Подвал
+*/
+.footer {
+  background-color: #000c55;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 345px;
+  border-top: 2px solid #ffffff;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-column-con li {
+  margin-bottom: 17px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-column-page li {
+  font-size: 28px;
+  margin-bottom: 3px;
+}
+
+.footer-column-page ul {
+  list-style: none;
+  float: left;
+}
+
+.footer-column-page a {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.footer-column-page a:hover {
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.footer-bottom {
+  background: #000a44;
+  color: #ffffff;
+  height: 35px;
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .footer-logo p {
+    font-size: 18px;
+  }
+
+  .footer-columns {
+    grid-gap: 50px;
+  }
+  .footer-column-con li {
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+  .footer-column-page a {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/*
+Формы
+*/
+
+.reg_form h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.reg_form {
+  margin-bottom: 40px;
+}
+.reg_form a {
+  font-size: 1.2em;
+  transition: all 0.3s;
+  color: #3e3e3e;
+  text-decoration: underline;
+  margin-left: 70px;
+}
+.form-label {
+  font-size: 1.1em;
+}
+.btn {
+  background-color: #000c55;
+  color: white;
+}
+.reg_form a:hover {
+  margin-left: 65px;
+  transition: all 0, 3s;
+}
+.mb-3 {
+  margin: 10px;
+}
+
+.container .row h2 {
+  color: black;
+}
+@media (max-width: 768px) {
+  .reg_form a {
+    font-size: 1em;
+    transition: all 0.3s;
+    color: #3e3e3e;
+    text-decoration: underline;
+    margin-left: 70px;
+  }
+}
+/* 
+Страница "О кафедре"
+*/
+.about {
+  padding: 30px;
+  text-align: justify;
+  background: linear-gradient(to top left, #ffffff, #bcbcbc, #a1a0a0);
+}
+
+.about h2 {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top: 40px;
+  color: #000000;
+}
